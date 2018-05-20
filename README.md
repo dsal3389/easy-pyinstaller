@@ -4,3 +4,5 @@ there are no bugs and if there is just comment it
 (linux didn't tested yet: this need to run on linux too i dont see any problem but i didnt test it yet)
 
 hope its gonna help someone or make it easyer for you
+
+BTW this is my first GUI app 
