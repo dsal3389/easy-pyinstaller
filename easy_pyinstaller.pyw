@@ -55,7 +55,8 @@ class Window_first(Frame):
             file_name = select.split('/')
             fix_space = file_name[-1].split('.')
             fixed = fix_space[0].split()
-            os.rename(file_name[-1], '_'.join(fixed) + '.' + ls[-1])
+            if len(fixed) >1:
+            	os.rename(file_name[-1], '_'.join(fixed) + '.' + ls[-1])
             select = '/'.join(file_name[:-1]) + '/' +'_'.join(fixed) + '.' + ls[-1]
             self._file = select
             settings_list.insert(END, 'File: ' +select)
